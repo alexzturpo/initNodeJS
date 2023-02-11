@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>ELIMINAR USUARIOS</h1>
+    <form action="/users/delete/<%= user[0].id %>" method="post">
+        <h1>DESEAS ELIMINAR EL USUARIO?</h1>
+        <a class='btn-danger' href="/users/all">Cancelar</a>
+        <input type="submit" value="Eliminar">
+    </form>
 </body>
 </html>

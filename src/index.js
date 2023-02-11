@@ -6,7 +6,7 @@ const connection = require('./connection')
 
 const user = require('./routers/user')
 const loggedMiddleware = require('./middlewares/logged')
- 
+
 //* middewares
 // app.use(loggedMiddleware.isLogged)
 //* Usando  archivos estaticos
@@ -20,8 +20,6 @@ app.set('title','Aplicacion hecha en nodeJS')
 app.set('port','3000')
 app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views'))
-
-  
 
 //* rutas
 app.get('/',(req,res)=>{
